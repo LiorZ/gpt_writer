@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 10px; }
+    input, select, textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>OpenAI Text Replacer Settings</h1>
+  <label for="apiKey">OpenAI API Key:</label>
+  <input type="text" id="apiKey" placeholder="sk-..."/>
+
+  <label for="model">Model:</label>
+  <input type="text" id="model" placeholder="e.g. gpt-3.5-turbo"/>
+
+  <label for="systemPrompts">System Prompts (one per line):</label>
+  <textarea id="systemPrompts" rows="5"></textarea>
+
+  <label for="activePrompt">Active Prompt:</label>
+  <select id="activePrompt"></select>
+
+  <button id="saveBtn">Save Settings</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
